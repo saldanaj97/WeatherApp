@@ -59,7 +59,7 @@ function getLocation(latitude, longitude){
 
 // Function to get the weather from the open weather API
 function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherkey}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherkey}`;
 
     // Parse the data from the API
     fetch(api)
