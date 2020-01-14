@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="font/Rimouski.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function dayOfTheWeek(){
+                var d = new Date();
+                var weekday = new Array(7);
+                weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                document.write(weekday[d.getDay()]);
+            }
+        </script>
+
+        <div class="container">
+            <div class="app-title">
+                <p><script type="text/javascript">dayOfTheWeek();</script></p>
+            </div>
+
+            <div class="notification"></div>
+
+            <div class="weather-container">
+                <div class="weather-icon">
+                    <img src="icons/unknown.png">
+                </div>
+
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+
+                <div class="temperature-value">
+                    <p> - ˚<span> F</span></p>
+                </div>
+                
+                <div class="temperature-feels-like">
+                    <p> Feels Like: - ˚ <span> F</span></p>
+                </div>
+
+                <div class="location">
+                    <p> - </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
