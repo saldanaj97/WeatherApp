@@ -8,3 +8,5 @@ OpenWeather API: https://openweathermap.org/
 Google Geocoding API: https://developers.google.com/maps/documentation/geocoding/start
 
 Images from: https://github.com/manifestinteractive/weather-underground-icons
+
+The web app can be reached from this link: https://saldanaj97.github.io/WeatherApp/
