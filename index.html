@@ -2,50 +2,91 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Weather App</title>
+        <title>3 Day Forecast</title>
         <link rel="stylesheet" href="font/Rimouski.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <script type="text/javascript">
-            function dayOfTheWeek(){
+            function dayOfTheWeek(day){
                 var d = new Date();
                 var weekday = new Array(7);
                 weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                document.write(weekday[d.getDay()]);
+                document.write(weekday[d.getDay()+day]);
             }
         </script>
 
-        <div class="container">
-            <div class="app-title">
-                <p><script type="text/javascript">dayOfTheWeek();</script></p>
+        <div class="title-bar"> 
+            <h1>3 Day Forecast </h1>
+        </div>
+
+        <div class="weather-card">
+            <div class="currentDay-container">
+                <div class="curr-app-title">
+                    <p><script type="text/javascript">dayOfTheWeek(0);</script></p>
+                </div>
+    
+                <div class="curr-notification"></div>
+    
+                <div class="weather-container">
+                    <div class="curr-weather-icon">
+                        <img src="icons/unknown.png">
+                    </div>
+    
+                    <div class="curr-temperature-description">
+                        <p> - </p>
+                    </div>
+    
+                    <div class="curr-temperature-value">
+                        <p> - ˚<span> F</span></p>
+                    </div>
+                </div>
             </div>
 
-            <div class="notification"></div>
-
-            <div class="weather-container">
-                <div class="weather-icon">
-                    <img src="icons/unknown.png">
+            <div class="nextDay-container">
+                <div class="next-app-title">
+                    <p><script type="text/javascript">dayOfTheWeek(1);</script></p>
                 </div>
-
-                <div class="temperature-description">
-                    <p> - </p>
+    
+                <div class="next-notification"></div>
+    
+                <div class="next-weather-container">
+                    <div class="next-weather-icon">
+                        <img src="icons/unknown.png">
+                    </div>
+    
+                    <div class="next-temperature-description">
+                        <p> - </p>
+                    </div>
+    
+                    <div class="next-temperature-value">
+                        <p> - ˚<span> F</span></p>
+                    </div>
                 </div>
-
-                <div class="temperature-value">
-                    <p> - ˚<span> F</span></p>
+            </div>
+    
+            <div class="twoDay-container">
+                <div class="twoDay-app-title">
+                    <p><script type="text/javascript">dayOfTheWeek(2);</script></p>
                 </div>
-                
-                <div class="temperature-feels-like">
-                    <p> Feels Like: - ˚ <span> F</span></p>
-                </div>
-
-                <div class="location">
-                    <p> - </p>
+    
+                <div class="twoDay-notification"></div>
+    
+                <div class="twoDay-weather-container">
+                    <div class="twoDay-weather-icon">
+                        <img src="icons/unknown.png">
+                    </div>
+    
+                    <div class="twoDay-temperature-description">
+                        <p> - </p>
+                    </div>
+    
+                    <div class="twoDay-temperature-value">
+                        <p> - ˚<span> F</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-
         <script src="app.js"></script>
     </body>
 </html>
