@@ -1,5 +1,5 @@
 # WeatherApp
-A basic weather app built using Javascript. 
+A basic weather app built using Javascript to learn and become better at javascript.
 
 The app utilizes OpenWeather API and Google's Geocoding API. The links can be found below. 
 
